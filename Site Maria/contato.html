@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Todos os Produtos - Maria Arte</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/mariaartep.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>                    
+                </ul>
+            </nav>
+            <!--<img src="images/cart.png" width="30px" height="30px">-->
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()"> 
+        </div>
+    </div>
+
+    <!-----------single product detail------------>
+    <div class="small-container single-product">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdV4SV5biW3bSW3s_eue-XR44r5oJX4dBx-ggnhMLKUcpVxmA/viewform?embedded=true" width="100%" height="869px" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+    </div>
+
+    <!--------footer------------>
+    <div class="footer">
+        <div class="container">            
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Quem Somos</h3>
+                    <p>Em 2008 estabelecemos nossa empresa com a intenção de dar cor e beleza a casa de nossos clientes e permitir que os turistas que viessem a nossa cidade levassem consigo um pouco de nossas belezas. Estamos localizados no Shopping de Artesanato Potiguar, hoje denominado Mercado Maré em Natal/RN. Trabalhamos com uma grande variedade de produtos para atender com qualidade à todos vocês.</p>
+                    <div class="app-logo">
+                        <img src="">
+                        <img src="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/mariaarteb.png">
+                    <p></p>
+                 </div>
+                 <div class="footer-col-3">
+                     <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                 </div>
+                 <div class="footer-col-4">
+                    <h3>Redes Sociais</h3>
+                   <ul>
+                       <li><a href="https://www.instagram.com/mariaarteoficial/?hl=pt"><i class="fa fa-instagram" style="font-size:46px;color:white;"></i></a></li>
+                       <li></li>
+                       <li><li><a href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5584991926321&e=ATMFeLMnesIgE6ld1Itl9ACnwbLsZL83Asxi7xACCmycSE5shFwOa9zr23JoQ1iRIh3plJhnrpMS10LirVhlxw&s=1"><i class="fa fa-whatsapp" style="font-size:46px;color:white;"></i></a></li></li>
+                   </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Maria Arte</p>
+        </div>
+    </div>
+    <!--------------js for toggle menu--------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+    <!--------js for product gallery------->
+
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        }
+    </script>
+
+
+
+</body>
+</html>
